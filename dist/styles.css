@@ -1,7 +1,7 @@
 /*!******************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css ***!
   \******************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Serif:ital@0;1&display=swap);
 /*!**********************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css (1) ***!
   \**********************************************************************/
@@ -18,6 +18,8 @@
     --main-color: #e2a975;
     --accent: #a3b079;
 }
+
+/* HEADER SECTION */
 
 * {
     box-sizing: border-box;
@@ -44,13 +46,24 @@ input {
     font: inherit;
 }
 
+body{
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-bg);
+    background-color: transparent;
 }
 
 .big-logo {
@@ -61,11 +74,10 @@ input {
     align-items: flex-start;
 }
 
-
 .top-list{
     list-style: none;
-    font-family: "Cormorant", serif;
-    font-weight: 700;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
     color: var(--main-color);
     align-items: flex-end;
     display: flex;
@@ -81,16 +93,30 @@ input {
     margin: 1rem;
     padding: 0;
 }
+
 .toggle-icon {
     max-width: 2rem;
-
+    fill: var(--color-fg);
 }
 
+.toggle-icon:hover {
+    cursor: pointer;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 0;
+    height: 10vh;
+}
+
+/* BODY SECTION */
 
 .container{
     width: 100%;
     height: 100vh;
-    background-color: var(--color-bg)
 }
 
 .slide {
