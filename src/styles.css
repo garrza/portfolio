@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
 :root {
-    --main-light: #f1f4e5;
+    --main-light: #f9faf4;
     --main-dark: #C66E4E;
     --main-color: #E98C36;
-    --accent: #AEBA8B;
+    --accent: #a3b079;
 }
 
 * {
@@ -13,15 +13,60 @@
     padding: 0;
 }
 
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-body {
-    font-size: 1.6rem; 
-    font-family: "Archivo Black", sans-serif;
-    line-height: 1.6;
+ul {
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+button,
+input {
+    color: inherit;
+    font: inherit;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.big-logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+    color: var(--accent);
+    margin: 0 0 0 1rem;
+}
+
+
+.top-list{
+    list-style: none;
+    font-family: "Cormorant", serif;
+    font-weight: 700;
     color: var(--main-color);
-    background-color: var(--main-light);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--main-dark)
 }
