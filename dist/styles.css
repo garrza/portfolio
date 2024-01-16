@@ -1,0 +1,33 @@
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css ***!
+  \******************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap);
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css (1) ***!
+  \**********************************************************************/
+:root {
+    --main-light: #f1f4e5;
+    --main-dark: #C66E4E;
+    --main-color: #E98C36;
+    --accent: #AEBA8B;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem; 
+    font-family: "Archivo Black", sans-serif;
+    line-height: 1.6;
+    color: var(--main-color);
+    background-color: var(--main-light);
+}
+
