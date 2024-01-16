@@ -5,10 +5,17 @@
 /*!**********************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css (1) ***!
   \**********************************************************************/
-:root {
-    --main-light: #f9faf4;
-    --main-dark: #C66E4E;
+[data-theme="light"] {
+    --color-bg: #f9faf4;
+    --color-fg: #0e202a;
     --main-color: #E98C36;
+    --accent: #a3b079;
+}
+
+[data-theme="dark"] {
+    --color-bg: #121212;
+    --color-fg: #f9faf4;
+    --main-color: #e2a975;
     --accent: #a3b079;
 }
 
@@ -43,7 +50,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    background-color: var(--color-bg);
 }
 
 .big-logo {
@@ -51,6 +58,7 @@ input {
     font-size: 2rem;
     color: var(--accent);
     margin: 0 0 0 1rem;
+    align-items: flex-start;
 }
 
 
@@ -59,11 +67,30 @@ input {
     font-family: "Cormorant", serif;
     font-weight: 700;
     color: var(--main-color);
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
+
+.toggle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 0;
+}
+.toggle-icon {
+    max-width: 2rem;
+
+}
+
 
 .container{
     width: 100%;
     height: 100vh;
+    background-color: var(--color-bg)
 }
 
 .slide {
@@ -73,6 +100,5 @@ input {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background-color: var(--main-dark)
 }
 
