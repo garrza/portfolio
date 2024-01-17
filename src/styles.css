@@ -3,15 +3,15 @@
 [data-theme="light"] {
     --color-bg: #f9faf4;
     --color-fg: #0e202a;
-    --main-color: #E98C36;
-    --accent: #a3b079;
+    --main-color: #0F2167;
+    --accent: #3559E0;
 }
 
 [data-theme="dark"] {
     --color-bg: #121212;
     --color-fg: #f9faf4;
-    --main-color: #e2a975;
-    --accent: #a3b079;
+    --main-color: #959cba;
+    --accent: #3559E0;
 }
 
 /* HEADER SECTION */
@@ -69,6 +69,11 @@ body{
     align-items: flex-start;
 }
 
+.big-logo:hover {
+    cursor: default;
+}
+
+
 .top-list{
     list-style: none;
     font-family: "Instrument Serif", serif;
@@ -91,7 +96,7 @@ body{
 
 .toggle-icon {
     max-width: 2rem;
-    fill: var(--color-fg);
+    fill: var(--main-color);
 }
 
 .toggle-icon:hover {
